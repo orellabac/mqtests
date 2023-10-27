@@ -21,6 +21,10 @@ That creates a MQ Server with these settings:
 I create some test code that you can see at `src/main/java/Main.java`. And then create some sql snippets to create a couple of UDFs.
 
 The main challenge is that External Network Access can also point to public facing IP addresses. In my case I am using (ngrok)[https://ngrok.com/] to expose my local server to the public facing internet.
+> NOTE: ngrok is simple to setup and use.
+> Once it is installed you expose a port as simple as:
+> `ngrok tcp 1414`
+> the previous line will expose my MQ port to the web. The ngrok interface will show an URL and an PORT that you can then use to access your local resource.
 
 So I will walk step by step.
 
